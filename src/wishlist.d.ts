@@ -1,3 +1,5 @@
+import { FormEvent } from 'react';
+
 interface Item {
 	name: string;
 	type: string;
@@ -5,3 +7,5 @@ interface Item {
 	priority: number;
 	desireToBuy: boolean;
 }
+
+type AddList = (form: FormEvent) => void;
